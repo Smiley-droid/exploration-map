@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte Explorateur</title>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script defer src="script.js"></script>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        #map { height: 100vh; }
+        #menu {
+            position: absolute; top: 10px; left: 10px;
+            background: white; padding: 10px; border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="menu">
+    <button onclick="setGitHubToken()">Se connecter à GitHub</button>
+    <button onclick="changeMapStyle()">Changer le style</button>
+</div>
+
+<div id="map"></div>
+
+</body>
+</html>
